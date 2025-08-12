@@ -90,26 +90,40 @@ export default {
 					}
 				},
 				'float': {
-					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-					'50%': { transform: 'translateY(-20px) rotate(180deg)' }
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg) scale(1)' },
+					'25%': { transform: 'translateY(-15px) rotate(90deg) scale(1.05)' },
+					'50%': { transform: 'translateY(-25px) rotate(180deg) scale(0.95)' },
+					'75%': { transform: 'translateY(-10px) rotate(270deg) scale(1.1)' }
 				},
 				'blob': {
-					'0%': { transform: 'translate(0px, 0px) scale(1)' },
-					'33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-					'66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-					'100%': { transform: 'translate(0px, 0px) scale(1)' }
+					'0%': { transform: 'translate(0px, 0px) scale(1) rotate(0deg)' },
+					'25%': { transform: 'translate(40px, -60px) scale(1.2) rotate(90deg)' },
+					'50%': { transform: 'translate(-30px, -20px) scale(0.8) rotate(180deg)' },
+					'75%': { transform: 'translate(-50px, 30px) scale(1.1) rotate(270deg)' },
+					'100%': { transform: 'translate(0px, 0px) scale(1) rotate(360deg)' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { opacity: '0.5' },
-					'50%': { opacity: '0.8' }
+					'0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+					'50%': { opacity: '0.9', transform: 'scale(1.1)' }
+				},
+				'electric': {
+					'0%, 100%': { opacity: '0.3', transform: 'scale(1) rotate(0deg)' },
+					'33%': { opacity: '0.7', transform: 'scale(1.3) rotate(120deg)' },
+					'66%': { opacity: '0.5', transform: 'scale(0.8) rotate(240deg)' }
+				},
+				'shimmer': {
+					'0%': { transform: 'translateX(-100%) rotate(45deg)' },
+					'100%': { transform: 'translateX(200%) rotate(45deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 6s ease-in-out infinite',
-				'blob': 'blob 7s infinite',
-				'pulse-glow': 'pulse-glow 4s ease-in-out infinite'
+				'float': 'float 8s ease-in-out infinite',
+				'blob': 'blob 12s infinite',
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'electric': 'electric 5s ease-in-out infinite',
+				'shimmer': 'shimmer 2s linear infinite'
 			},
 			backdropBlur: {
 				'xs': '2px',

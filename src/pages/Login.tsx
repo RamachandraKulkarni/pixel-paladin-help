@@ -71,9 +71,10 @@ export default function Login() {
             
             <Button
               type="submit"
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3 transition-all duration-300 transform hover:scale-[1.02]"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3 transition-all duration-500 transform hover:scale-[1.05] hover:shadow-xl hover:shadow-primary/30 relative overflow-hidden group"
             >
-              Sign in
+              <span className="relative z-10">Sign in</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
             </Button>
           </form>
           
